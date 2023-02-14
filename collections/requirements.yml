@@ -1,0 +1,11 @@
+---
+collections:
+# With just the collection name
+# - my_namespace.my_collection
+
+# The Galaxy URL to pull the collection from (default: ``--api-server`` from cmdline)
+# With the collection name, version, and source options
+- name: vyos.vyos
+  version: "main" # Version range identifiers (default: ``*``)
+  source: git@github.com:ansible-collections/vyos.vyos.git
+  type: git
