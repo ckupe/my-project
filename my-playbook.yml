@@ -1,0 +1,14 @@
+---
+- name: my first play in my playbook
+  hosts: all
+  connection: ssh
+  
+  tasks:
+    - name: configure the pre-login banner
+      vyos.vyos.vyos_banner:
+        banner: pre-login
+        text: |
+          this is my pre-login banner
+          that contains a multiline
+          string
+        state: present
